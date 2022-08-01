@@ -30,7 +30,11 @@ let package = Package(
         .target(
             name: "XLPagerTabStrip",
             dependencies: ["FXPageControl"],
-            exclude: ["Info.plist"],
+            exclude: [
+                "Info.plist",
+                "FXPageControl.h",
+                "FXPageControl.m"
+            ],
             resources: [.process("Resources")]
             ),
         .testTarget(
